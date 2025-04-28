@@ -1,0 +1,42 @@
+/* Input field styles */
+#text-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid hsl(216, 15%, 48%);
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Button styles */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    padding: 10px 16px;
+    background-color: hsl(218, 44%, 22%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: hsl(212, 45%, 39%);
+  }
+  
+  /* Output Image */
+  .output canvas,
+  .output svg {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 288px;
+  }
+  

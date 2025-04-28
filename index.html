@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QR & Barcode Generator</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="card">
-      <div class="qr-container">
-        <input
-          type="text"
-          id="text-input"
-          placeholder="Enter text, link, or code"
-        />
-        <div class="buttons">
-          <button onclick="generateQR()">Generate QR Code</button>
-          <button onclick="generateBarcode()">Generate Barcode</button>
-        </div>
-      </div>
-      <div class="output" id="output"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenCode — QR & Barcode Generator</title>
+
+  <!-- Link to your favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Link to your CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts (Outfit) -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo-container">
+      <img src="assets/images/logo.png" alt="GenCode Logo" class="logo">
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jsbarcode"></script>
-    <script src="script.js"></script>
-  </body>
+    <div class="qr-container">
+      <input type="text" id="text-input" placeholder="Enter text, link, or code">
+      <div class="buttons">
+        <button onclick="generateQR()">Generate QR Code</button>
+        <button onclick="generateBarcode()">Generate Barcode</button>
+      </div>
+    </div>
+
+    <div class="output" id="output"></div>
+
+    <button class="download-button" onclick="downloadImage()">Download Code</button>
+  </div>
+
+  <!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
 </html>

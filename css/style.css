@@ -1,14 +1,71 @@
-/* Input field styles */
-#text-input {
+/* Responsive Card Sizing */
+@media (min-width: 375px) {
+    .card {
+      width: 320px;
+      padding: 16px 16px 40px 16px;
+    }
+  
+    .card h1 {
+      font-size: 2rem;
+    }
+  
+    .card p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    background-color: hsl(212, 45%, 89%);
+    color: hsl(218, 44%, 22%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    padding: 16px 16px 40px 16px;
+    text-align: center;
+  }
+  
+  /* Logo Styles */
+  .logo-container {
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+  
+  /* QR Container */
+  .qr-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Input Styles */
+  #text-input {
     width: 90%;
     padding: 10px;
     margin-bottom: 16px;
     border: 1px solid hsl(216, 15%, 48%);
     border-radius: 10px;
     font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
   }
   
-  /* Button styles */
+  /* Buttons Section */
   .buttons {
     display: flex;
     justify-content: center;
@@ -25,18 +82,36 @@
     font-family: 'Outfit', sans-serif;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
   }
   
   .buttons button:hover {
     background-color: hsl(212, 45%, 39%);
   }
   
-  /* Output Image */
+  /* Output Section (QR or Barcode) */
   .output canvas,
   .output svg {
     margin-top: 20px;
     width: 100%;
     max-width: 288px;
+  }
+  
+  /* Download Button */
+  .download-button {
+    margin-top: 20px;
+    padding: 10px 16px;
+    background-color: hsl(218, 44%, 22%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: hsl(212, 45%, 39%);
   }
   

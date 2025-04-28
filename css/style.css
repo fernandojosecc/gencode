@@ -13,6 +13,11 @@
       font-size: 1.1rem;
     }
   }
+
+  * {
+    /*outline: 2px solid red;*/
+  }
+  
   
   /* Global Styles */
   body {
@@ -37,6 +42,15 @@
     padding: 16px 16px 40px 16px;
     text-align: center;
   }
+
+  .card img{
+    width: 100%;
+    max-width: 288px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: hsl(216, 100%, 61%, 1);
+  }
+
   
   /* Logo Styles */
   .logo-container {

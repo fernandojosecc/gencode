@@ -16,10 +16,6 @@ Built with **HTML**, **CSS**, and **Vanilla JavaScript**, GenCode offers a minim
 - Fast generation without page reload
 - Mobile-friendly
 
-## 📂 Folder Structure
-
-GenCode/ ├── index.html ├── style.css ├── script.js ├── images/ │ ├── logo.png │ └── favicon.png └── README.md
-
 ## 🚀 Links
 
 - **Live Site URL**: [Live Demo](https://fernandojosecc.github.io/gencode/)
